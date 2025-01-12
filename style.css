@@ -95,8 +95,8 @@ a:nth-of-type(12) {
 /* Hieronder komen jouw animaties */
 
   /* LINK 1 - Changing color */
-    /* De focus is er voor de gebruiksvriendelijksheid van het gebruiken van het toetsenbord. Wanneer er geen focus is, kan de link als normaal element beschouwd worden. Doordat de outline op none staat zie je geen lijn om de knop heen wanneer het element is geselecteerd */
-    *:focus {
+    
+    *:focus {/* De focus is er voor de gebruiksvriendelijksheid van het gebruiken van het toetsenbord. Wanneer er geen focus is, kan de link als normaal element beschouwd worden. Doordat de outline op none staat zie je geen lijn om de knop heen wanneer het element is geselecteerd */
       outline: none;
       ;
     }
@@ -115,4 +115,42 @@ a:nth-of-type(12) {
       box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     }
 
+  /* LINK 2 - Filling heart */
     
+    .heart-btn{
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      border: none;
+      background: none;
+    }
+
+    .active#heart:before,.active#heart:after{
+      background: red !important;
+    }
+
+    #heart{
+      width: 100px;
+      height: 90px;
+      transition: background 0.5s ease;
+    }
+
+    #heart:before, #heart:after{
+      transition: background 0.5s ease;
+      position: absolute;
+      content:"";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: dimgrey;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0% 100%;
+    }
+
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
