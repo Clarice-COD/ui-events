@@ -94,7 +94,7 @@ a:nth-of-type(12) {
 
 /* Hieronder komen jouw animaties */
 
-  /* LINK 1 */
+  /* LINK 1 - Changing color */
     /* De focus is er voor de gebruiksvriendelijksheid van het gebruiken van het toetsenbord. Wanneer er geen focus is, kan de link als normaal element beschouwd worden. Doordat de outline op none staat zie je geen lijn om de knop heen wanneer het element is geselecteerd */
     *:focus {
       outline: none;

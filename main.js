@@ -1,3 +1,25 @@
+// LINK 1 - Changing color
+  // Stap 2: Event toevoegen
+  function randomColor() {
+    var color = '#' + Math.random().toString(16).substr(2, 6);
+    // Stap 1: selecteer de elementen
+      // Stap 3: Iets doen
+      // Selecteerd de achtergrond kleur van de link
+      document.getElementById("color-btn").style.backgroundColor = color;
+
+      // Selecteerd de tekst van de link
+      // Stap 3: Iets doen
+      document.getElementById("color-btn").innerHTML = color;
+      console.log(color);
+    }
+
+
+
+
+
+
+
+
 /*
    De eerste interactie is al voor jullie uitgewerkt
    Als je op het 12e linkje klikt (“Interaction”), springt deze omhoog
@@ -22,8 +44,11 @@ function jumpHandler() {
 interaction.addEventListener('animationend', jumpHandler)
 
 
-// Ga zelf verder met de overige elementen, aan de hand van de instructies
-// Maak bijvoorbeeld een bibber animatie als je op iets klikt
+
+
+
+
+
 
 // Stap 1: querySelector
 // let bibberLink = document.querySelector...
