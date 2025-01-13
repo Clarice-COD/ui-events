@@ -1,23 +1,27 @@
 // LINK 1 - Changing color
-  // Stap 2: Event toevoegen
-  function randomColor() {
-    var color = '#' + Math.random().toString(16).substr(2, 6);
-    // Stap 1: selecteer de elementen
-      // Stap 3: Iets doen
-      // Selecteerd de achtergrond kleur van de link
-      document.getElementById("color-btn").style.backgroundColor = color;
+// Stap 2: Event toevoegen
+function randomColor() {
+  var color = '#' + Math.random().toString(16).substr(2, 6);
+  // Stap 1: selecteer de elementen
+  // Stap 3: Iets doen
+  // Selecteerd de achtergrond kleur van de link
+  document.getElementById("color-btn").style.backgroundColor = color;
 
-      // Selecteerd de tekst van de link
-      // Stap 3: Iets doen
-      document.getElementById("color-btn").innerHTML = color;
-      console.log(color);
-    }
-
-
+  // Selecteerd de tekst van de link
+  // Stap 3: Iets doen
+  document.getElementById("color-btn").innerHTML = color;
+  console.log(color);
+}
 
 
+// Stap 1: querySelector
+// let bibberLink = document.querySelector...
 
+// Stap 2: addEventListener
+// bibberLink.addEventListener...
 
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// bibberLink.classList.toggle...
 
 
 /*
