@@ -15,13 +15,19 @@ function randomColor() {
 
 
 // Stap 1: querySelector
-// let bibberLink = document.querySelector...
+var button = document.getElementById("shake");
+// let interaction = document.querySelector('a:nth-of-type(2)')
 
 // Stap 2: addEventListener
-// bibberLink.addEventListener...
+interaction.addEventListener('click', jumpHandler)
 
-// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-// bibberLink.classList.toggle...
+  function jumpHandler() {
+    // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+    interaction.classList.toggle('shake')
+  }
+
+
+
 
 
 /*

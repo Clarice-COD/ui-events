@@ -136,6 +136,6 @@ a:nth-of-type(12) {
   }
 
   /* class om de shake animatie toe te voegen via javascript */
-  .apply-shake{
+  .shake{
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   }
