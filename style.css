@@ -119,23 +119,43 @@ a:nth-of-type(12) {
 
   @keyframes shake {  /* Naam animatie */
     10%, 90% {
-      transform: translate3d(-1px, 0, 0); /* translate3d zorgt ervoor dat het element door de ruimte kan verplaatsen, de volgorde is (x, y, z) */
+      transform: translate(-1px, 0); /* translate3d zorgt ervoor dat het element door de ruimte kan verplaatsen, de volgorde is (x, y, z) */
     }
     
     20%, 80% {
-      transform: translate3d(2px, 0, 0);
+      transform: translate(2px, 0);
     }
     
     30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
+      transform: translate(-4px, 0);
     }
 
     40%, 60% {
-      transform: translate3d(4px, 0, 0);
+      transform: translate(4px, 0);
     }
   }
 
   /* class om de shake animatie toe te voegen via javascript */
   .shake{
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+
+  /* LINK 3 - Fill */
+
+  .fill-btn{
+    background: linear-gradient( to left, #050840 50%, #7ce7c9 50%);
+    background-size: 200% 100%;
+
+    transition: all ease .3s;
+    background-position: right top;
+  }
+
+  .fill{
+    background-position: left top;
+    color: #050840;
+    border: #7ce7c9;
+    &:hover,
+  &:focus {
+    color: #050840
+  }
   }

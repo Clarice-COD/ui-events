@@ -15,25 +15,49 @@ function randomColor() {
 
 
 // Stap 1: querySelector
-var button = document.getElementById("shake");
+// var button = document.getElementById("shake");
 // let interaction = document.querySelector('a:nth-of-type(2)')
 
 // Stap 2: addEventListener
-interaction.addEventListener('click', jumpHandler)
+// interaction2.addEventListener('click', jumpHandler)
 
-  function jumpHandler() {
+  // function jumpHandler() {
     // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-    interaction.classList.toggle('shake')
-  }
+    // interaction2.classList.toggle('shake');
+  // }
 
 
+// Stap 1: querySelector
+// let interaction3 = document.querySelector('a:nth-of-type(3)')
+let interaction1 = document.querySelector('a:nth-of-type(1)')
 
 
+let shakeBtn = document.querySelector('a#shake')
+console.log(shake)
 
-/*
-   De eerste interactie is al voor jullie uitgewerkt
-   Als je op het 12e linkje klikt (“Interaction”), springt deze omhoog
-*/
+shakeBtn.addEventListener('click', shake)
+
+function shake() {
+  shakeBtn.classList.toggle('shake')
+}
+
+
+let fill = document.querySelector('a#fill')
+fill.addEventListener('click', fillButton)
+
+console.log(fill)
+
+function fillButton() {
+  fill.classList.toggle('fill')
+}
+
+// Stap 2: addEventListener
+// interaction3.addEventListener('click', jumpHandler)
+
+// function jumpHandler() {
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  // interaction.classList.toggle('fill')
+// }
 
 // Stap 1: selecteer het 12e linkje, en sla deze op in een variabele
 let interaction = document.querySelector('a:nth-of-type(12)')
