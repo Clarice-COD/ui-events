@@ -41,7 +41,7 @@ function shake() {
 }
 
 
-let fill = document.querySelector('a#fill')
+let fill = document.querySelector("a#fill")
 fill.addEventListener('click', fillButton)
 
 console.log(fill)
@@ -92,6 +92,7 @@ let pinkBtn = document.querySelector("a#pink");
 pinkBtn.addEventListener('click',TurnMepink);
 
 function TurnMepink() {
+  // Stap 3: functie geven
   pinkBtn.classList.add('pink-color');
 }
 
@@ -102,18 +103,50 @@ let smallBtn = document.querySelector("a#small");
 
 // Stap 2: addEventListener
 smallBtn.addEventListener('click', MakeMeSmaller);
-console.log(smaller)
 
 function MakeMeSmaller() {
-  smallBtn.classList.toggle('smaller1')
-}
-
-smallBtn.addEventListener('click', MakeMeSmaller);
-console.log(smaller)
-
-function MakeMeSmaller() {
+  // Stap 3: functie geven
   smallBtn.classList.toggle('smaller2')
 }
+
+// Rotate
+// Stap 1: querySelector
+let rotateBtn = document.querySelector("a#rotate");
+
+// Stap 2: addEventListener
+rotateBtn.addEventListener('click', MakeMeRotate);
+
+function MakeMeRotate() {
+  // Stap 3: functie geven
+  rotateBtn.classList.add('rotate')
+}
+// Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
+interaction.addEventListener('animationend', MakeMeRotate)
+
+
+
+// Small
+// Stap 1: querySelector
+let floatBtn = document.querySelector("a#float");
+
+// Stap 2: addEventListener
+floatBtn.addEventListener('click', MakeMeFloat);
+
+function MakeMeFloat() {
+  // Stap 3: functie geven
+  floatBtn.classList.toggle('float')
+}
+
+// // Stap 1: querySelector
+// let floatBtn = document.querySelector("a#float");
+
+// // Stap 2: addEventListener
+// floatBtn.addEventListener('click', MakeMeFloat);
+
+// function MakeMeFloat() {
+//   // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+//   floatBtn.classList.add('float');
+// }
 
 
 

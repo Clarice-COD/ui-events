@@ -217,3 +217,40 @@ a:nth-of-type(12) {
     font-size: 2px;
     text-align: center;
   }
+
+
+
+  .rotate {
+    animation-name: rotate;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg)
+    }
+  
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+
+
+  .float {
+    animation-name: float;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes float {
+    from {
+      transform: translate(0px, 0);
+    }
+  
+    to {
+      transform: translate(0px, -20px);
+      box-shadow: 2px 34px 37px -20px #7ce7c9;
+    }
+  }
