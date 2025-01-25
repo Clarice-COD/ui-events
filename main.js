@@ -86,15 +86,19 @@ interaction.addEventListener('animationend', jumpHandler)
 // pink
 
 // Stap 1: querySelector
-let pinkBtn = document.querySelector("a#pink");
+let lightBtn = document.querySelector("a#light");
 
 // Stap 2: addEventListener
-pinkBtn.addEventListener('click',TurnMepink);
+lightBtn.addEventListener('click',TurnMeLight);
 
-function TurnMepink() {
+function TurnMeLight() {
   // Stap 3: functie geven
-  pinkBtn.classList.add('pink-color');
+  var lightBtn = document.body;
+  lightBtn.classList.add('light-mode');
 }
+
+// Extraatje, waardoor de class weer weggehaald wordt zodra de animatie afgelopen is
+interaction.addEventListener('animationend', TurnMeLight)
 
 
 // Small
@@ -137,25 +141,16 @@ function MakeMeFloat() {
   floatBtn.classList.toggle('float')
 }
 
-// // Stap 1: querySelector
-// let floatBtn = document.querySelector("a#float");
-
-// // Stap 2: addEventListener
-// floatBtn.addEventListener('click', MakeMeFloat);
-
-// function MakeMeFloat() {
-//   // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-//   floatBtn.classList.add('float');
-// }
 
 
+// Stap 1: querySelector
+// let bibberLink = document.querySelector...
 
+// Stap 2: addEventListener
 // bibberLink.addEventListener...
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // bibberLink.classList.toggle...
-
-
 
 
 
