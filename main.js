@@ -29,7 +29,6 @@ function randomColor() {
 
 // Stap 1: querySelector
 // let interaction3 = document.querySelector('a:nth-of-type(3)')
-let interaction1 = document.querySelector('a:nth-of-type(1)')
 
 
 let shakeBtn = document.querySelector('a#shake')
@@ -51,16 +50,20 @@ function fillButton() {
   fill.classList.toggle('fill')
 }
 
-// Stap 2: addEventListener
-// interaction3.addEventListener('click', jumpHandler)
+// Stap 1: querySelector
+let vanishBtn = document.querySelector("a#vanish");
+console.log(vanishBtn)
 
-// function jumpHandler() {
-  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-  // interaction.classList.toggle('fill')
-// }
+vanishBtn.addEventListener('click',MakeMeDissapear);
+
+function MakeMeDissapear () {
+  vanishBtn.classList.add('fadeOut')
+}
+
+// fadeBtn.addEventListener('click' fadeOut)
 
 // Stap 1: selecteer het 12e linkje, en sla deze op in een variabele
-let interaction = document.querySelector('a:nth-of-type(12)')
+let interaction = document.querySelector('a#userFlow')
 
 // Stap 2: voeg de (click) event listener toe aan de link, met een callback functie
 // In dit geval wordt de jumpHandler functie aangeroepen, zodra je op het linkje klikt
@@ -78,6 +81,25 @@ function jumpHandler() {
 interaction.addEventListener('animationend', jumpHandler)
 
 
+
+
+// pink
+
+// Stap 1: querySelector
+let pinkBtn = document.querySelector("a#pink");
+
+// Stap 2: addEventListener
+pinkBtn.addEventListener('click',TurnMepink);
+
+function TurnMepink() {
+  pinkBtn.classList.add('pink-color');
+}
+
+
+// bibberLink.addEventListener...
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// bibberLink.classList.toggle...
 
 
 

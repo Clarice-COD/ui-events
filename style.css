@@ -159,3 +159,40 @@ a:nth-of-type(12) {
     color: #050840
   }
   }
+
+    /* LINK 4 - Hide */
+
+    .vanish{
+      opacity: 1;
+    }
+
+    .fadeOut {
+      animation: fadeOut 2s;
+    }
+    
+    @keyframes fadeOut{
+      from { opacity: 1;}
+      to { opacity: 0;}
+    }
+    
+
+    /* LINK 5 - Pink */
+
+    #pink{
+      background-color: pink;
+      color: rgb(199, 12, 43);
+      border: rgb(199, 12, 43);
+    }
+
+    body .pink-color{
+      background-color: pink;
+    }
+  
+
+  /* LINK 6 - Hide */
+
+  .duck-img{
+    width: 1.5rem;
+  }
+
+  
