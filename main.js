@@ -83,7 +83,7 @@ interaction.addEventListener('animationend', jumpHandler)
 
 
 
-// pink
+// Light
 
 // Stap 1: querySelector
 let lightBtn = document.querySelector("a#light");
@@ -144,15 +144,16 @@ function MakeMeFloat() {
 
 
 // Stap 1: querySelector
-// let bibberLink = document.querySelector...
+let duckBtn = document.querySelector("a#duck");
 
 // Stap 2: addEventListener
-// bibberLink.addEventListener...
+duckBtn.addEventListener('click', MakeDuckSound);
 
-// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-// bibberLink.classList.toggle...
-
-
+function MakeDuckSound() {
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  var duckBtn = document.audio;
+  duckBtn.play()
+}
 
 
 // Stap 1: querySelector
