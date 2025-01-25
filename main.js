@@ -96,6 +96,27 @@ function TurnMepink() {
 }
 
 
+// Small
+// Stap 1: querySelector
+let smallBtn = document.querySelector("a#small");
+
+// Stap 2: addEventListener
+smallBtn.addEventListener('click', MakeMeSmaller);
+console.log(smaller)
+
+function MakeMeSmaller() {
+  smallBtn.classList.toggle('smaller1')
+}
+
+smallBtn.addEventListener('click', MakeMeSmaller);
+console.log(smaller)
+
+function MakeMeSmaller() {
+  smallBtn.classList.toggle('smaller2')
+}
+
+
+
 // bibberLink.addEventListener...
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)

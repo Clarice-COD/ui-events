@@ -167,9 +167,9 @@ a:nth-of-type(12) {
     }
 
     .fadeOut {
-      animation: fadeOut 2s;
+      animation: fadeOut 1s;
     }
-    
+
     @keyframes fadeOut{
       from { opacity: 1;}
       to { opacity: 0;}
@@ -185,7 +185,7 @@ a:nth-of-type(12) {
     }
 
     body .pink-color{
-      background-color: pink;
+      background-color: rgb(185, 15, 43);
     }
   
 
@@ -195,4 +195,25 @@ a:nth-of-type(12) {
     width: 1.5rem;
   }
 
-  
+/* LINK 7 - Smaller */
+
+  .smaller1 {
+    width: 5rem;
+    height: 2.5rem;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .smaller2 {
+    width: 4rem;
+    height: 2rem;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .smaller3 {
+    width: 1rem;
+    height: 0.5rem;
+    font-size: 2px;
+    text-align: center;
+  }
