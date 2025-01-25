@@ -248,3 +248,47 @@ a:nth-of-type(12) {
       box-shadow: 2px 34px 37px -20px #7ce7c9;
     }
   }
+
+
+
+  #loading{
+    position: relative;
+    background: none;
+    outline: none;
+    transition: 200ms;
+  }
+
+  .loading{
+    color: transparent;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem 1rem;
+    border-left: 2px solid #00c2cb;
+    animation: spin 2s 500ms forwards;
+
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes loading {
+
+    0% {
+      color: transparent;
+    }
+    
+    80% {
+      border: 2px solid transparent;
+      border-left: 2px solid #00c2cb;
+      color: transparent;
+    }
+
+    100% {
+      transform: rotate(720deg);
+      border-left: 2px solid #00c2cb;
+      color: transparent;
+    }
+  }

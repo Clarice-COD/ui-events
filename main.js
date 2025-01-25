@@ -157,6 +157,23 @@ function MakeDuckSound() {
 
 
 // Stap 1: querySelector
+let loadingBtn = document.querySelector("a#loading");
+
+// Stap 2: addEventListener
+loadingBtn.addEventListener('click', MakeMeLoad);
+
+function MakeMeLoad() {
+  loadingBtn.classList.toggle('loading')
+}
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// bibberLink.classList.toggle...
+
+
+
+
+
+// Stap 1: querySelector
 // let bibberLink = document.querySelector...
 
 // Stap 2: addEventListener
