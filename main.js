@@ -38,7 +38,7 @@ let shakeBtn = document.querySelector('a#shake')
 console.log(shake)
 
 // Stap 2: addEventListener
-shakeBtn.addEventListener('click', shake)
+shakeBtn.addEventListener('dblclick', shake)
 
 function shake() {
   // Stap 3: functie geven
@@ -50,7 +50,7 @@ function shake() {
 let fill = document.querySelector("a#fill")
 
 // Stap 2: addEventListener
-fill.addEventListener('click', fillButton)
+fill.addEventListener('mouseover', fillButton)
 
 console.log(fill)
 
@@ -65,7 +65,7 @@ let vanishBtn = document.querySelector("a#vanish");
 console.log(vanishBtn)
 
 // Stap 2: addEventListener
-vanishBtn.addEventListener('click',MakeMeDissapear);
+vanishBtn.addEventListener('keydown',MakeMeDissapear);
 
 function MakeMeDissapear () {
   // Stap 3: functie geven
@@ -103,7 +103,7 @@ function MakeDuckSound() {
 let smallBtn = document.querySelector("a#small");
 
 // Stap 2: addEventListener
-smallBtn.addEventListener('click', MakeMeSmaller);
+smallBtn.addEventListener('mouseup', MakeMeSmaller);
 
 function MakeMeSmaller() {
   // Stap 3: functie geven
@@ -115,7 +115,7 @@ function MakeMeSmaller() {
 let rotateBtn = document.querySelector("a#rotate");
 
 // Stap 2: addEventListener
-rotateBtn.addEventListener('click', MakeMeRotate);
+rotateBtn.addEventListener('mouseout', MakeMeRotate);
 
 function MakeMeRotate() {
   // Stap 3: functie geven
@@ -127,7 +127,7 @@ function MakeMeRotate() {
 let floatBtn = document.querySelector("a#float");
 
 // Stap 2: addEventListener
-floatBtn.addEventListener('click', MakeMeFloat);
+floatBtn.addEventListener('mouseleave', MakeMeFloat);
 
 function MakeMeFloat() {
   // Stap 3: functie geven
@@ -139,7 +139,7 @@ function MakeMeFloat() {
 let loadingBtn = document.querySelector("a#loading");
 
 // Stap 2: addEventListener
-loadingBtn.addEventListener('click', MakeMeLoad);
+loadingBtn.addEventListener('mouseenter', MakeMeLoad);
 
 function MakeMeLoad() {
   loadingBtn.classList.toggle('loading')
